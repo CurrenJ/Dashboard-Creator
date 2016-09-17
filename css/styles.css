@@ -10,7 +10,35 @@ body {
   padding: 10px;
   border-radius: 5px;
   color: #ccc;
+  margin-right: 30px;
+  margin-top: 30px;
 }
+
+/*dropdown code*/
+.dropdown {
+  display: inline;
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: rgba(51,51,51, 0.6);
+    float: left;
+}
+span {
+  display: block;
+  cursor: pointer;
+  font-family: sans-serif;
+  margin: 10px;
+  font-size: 1.2em;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+span:hover {
+  color: #fff;
+}
+
+
 #addElement {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
@@ -27,44 +55,6 @@ body {
 #menu:hover {
   color: #fff;
   cursor: pointer;
-}
-
-h3 {
-  margin: 0;
-}
-
-#container {
-  height: 100%;
-  width: 100%;
-  background-color: blue;
-  display: flex;
-  flex-direction: column;
-}
-
-#preview {
-  width: 100%;
-  height: 50%;
-}
-
-#preview_container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: red;
-}
-
-#tools {
-  position: relative;
-  width: 100%;
-  height: 50%;
-  flex-grow: 1;
-}
-
-#tools_container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: green;
 }
 
 #workspace {
