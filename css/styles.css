@@ -28,9 +28,6 @@ body {
   color: #fff;
   cursor: pointer;
 }
-html, body {
-  height: 99%;
-}
 
 h3 {
   margin: 0;
