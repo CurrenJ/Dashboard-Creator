@@ -33,6 +33,7 @@ span {
 }
 .dropdown:hover .dropdown-content {
     display: block;
+    width: 100%;
 }
 span:hover {
   color: #fff;
@@ -43,6 +44,15 @@ span:hover {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   margin-right: 20px;
+}
+#style {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin-right: 20px;
+}
+#style:hover {
+  color: #fff;
+  cursor: pointer;
 }
 #addElement:hover {
   color: #fff;
