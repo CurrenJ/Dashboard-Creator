@@ -68,3 +68,7 @@ span:hover {
   border-style: dashed;
   border-color: #778899;
 }
+
+#item {
+  color: red;
+}
