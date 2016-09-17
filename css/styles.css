@@ -67,8 +67,9 @@ span:hover {
   border-radius: 20px;
   border-style: dashed;
   border-color: #778899;
+  padding-top: 6px;
 }
 
 #item {
-  color: red;
+  background-color: red;
 }
