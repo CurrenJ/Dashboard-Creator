@@ -25,7 +25,7 @@
         <div class="dropdown-content">
           <span>Camera</span>
           <span>Button</span>
-          <span>Blank</span>
+          <span onclick="addElement('blank');">Blank</span>
         </div>
       </div>
       <div class="dropdown">
@@ -78,11 +78,11 @@
         };
         $('.grid-stack').gridstack(options);
       });
-      
+
       function addElement(type) {
         var grid = $('.grid-stack').data('gridstack');
         if(type === 'blank') {
-          grid.addWidget('<div class="grid-stack-item"><div id="item" class="grid-stack-item-content">Drag me</div></div>', 0, 0, 3, 2, true);
+          grid.addWidget('<div class="grid-stack-item"><div id="item" class="grid-stack-item-content">Drag me</div></div>', 0, 0, 2, 2, true);
         }
       }
     </script>
