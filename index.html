@@ -61,6 +61,7 @@
       </div>
     </div>
 
+    <i id="trash" class="fa fa-trash-o fa-3x"></i>
 
     <nav id="mySidenav"></nav>
     <script type="text/javascript">
@@ -72,7 +73,9 @@
           verticalMargin: 10,
           float: true,
           height: 8,
-          width: 12
+          width: 12,
+          removable: '#trash',
+          removeTimeout: 100
         };
         $('.grid-stack').gridstack(options);
       });

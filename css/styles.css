@@ -104,3 +104,11 @@ span:hover {
   display: inline;
   font-size: 1em;
 }
+
+#trash {
+  position: fixed;
+  float: left;
+  margin: 30px;
+  top: 90%;
+  color: #ccc;
+}
