@@ -52,17 +52,11 @@
     <div id="workspace">
       <div class="grid-stack">
 
-          <div class="grid-stack-item"
+          <!--<div class="grid-stack-item"
           data-gs-x="0" data-gs-y="4"
           data-gs-width="4" data-gs-height="2">
             <div id="item" class="grid-stack-item-content">Drag me</div>
-          </div>
-
-          <div class="grid-stack-item"
-          data-gs-x="4" data-gs-y="0"
-          data-gs-width="4" data-gs-height="2">
-            <div id="item" class="grid-stack-item-content">Drag me</div>
-          </div>
+          </div>-->
 
       </div>
     </div>
@@ -70,6 +64,7 @@
 
     <nav id="mySidenav"></nav>
     <script type="text/javascript">
+    var cellHeights = $('#workspace').height()/8;
       $(function () {
         var options = {
           animate: true,
@@ -85,7 +80,10 @@
       function addElement(type) {
         var grid = $('.grid-stack').data('gridstack');
         if(type === 'blank') {
-          grid.addWidget('<div class="grid-stack-item"><div id="item" class="grid-stack-item-content">Drag me</div></div>', 0, 0, 2, 2, true);
+          grid.addWidget('<div class="grid-stack-item"><div id="item" class="grid-stack-item-content"></div></div>', 0, 0, 1, 1, true);
+        }
+        if(type === 'camera') {
+          grid.addWidget('<div class="grid-stack-item"><div id="item" class="grid-stack-item-content"></div></div>', 0, 0, 3, 3, true);
         }
       }
     </script>
