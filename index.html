@@ -14,7 +14,6 @@
     <script src="depend/lodash.js" charset="utf-8"></script>
     <link rel="stylesheet" href="depend/grid.css" />
     <script type="text/javascript" src='depend/grid.js'></script>
-    <script src="js/addElement.js" charset="utf-8"></script>
 
   </head>
 
@@ -79,6 +78,14 @@
         };
         $('.grid-stack').gridstack(options);
       });
+      
+      function addElement(type) {
+        var grid = $('.grid-stack').data('gridstack');
+        if(type === 'blank') {
+          grid.addWidget('<div class="grid-stack-item"><div id="item" class="grid-stack-item-content">Drag me</div></div>', 0, 0, 3, 2, true);
+        }
+      }
     </script>
+    <!--<script src="js/addElement.js" charset="utf-8"></script>-->
   </body>
 </html>
