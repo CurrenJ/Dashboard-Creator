@@ -80,7 +80,7 @@ span:hover {
   padding-top: 6px;
 }
 
-#itemr {
+#item {
   background-color: #fff;
   font-family: sans-serif;
 }
@@ -103,5 +103,4 @@ span:hover {
   color: #fff;
   display: inline;
   font-size: 1em;
-  text-decoration: none;
 }
