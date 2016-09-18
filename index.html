@@ -6,14 +6,14 @@
 
     <title>Dashboard Creator</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/27acf330f2.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="depend/jquery.js"></script>
+    <script src="depend/fa.js"></script>
+    <script src="depend/jqueryui.js"></script>
 
     <!--Grid Controlls-->
-    <script src="https://cdn.jsdelivr.net/lodash/4.15.0/lodash.min.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.2.6/gridstack.min.css" />
-    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.2.6/gridstack.min.js'></script>
+    <script src="depend/lodash.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="depend/grid.css" />
+    <script type="text/javascript" src='depend/grid.js'></script>
     <script src="js/addElement.js" charset="utf-8"></script>
 
   </head>
@@ -73,7 +73,9 @@
           animate: true,
           cellHeight: 80,
           verticalMargin: 10,
-          float: true
+          float: true,
+          height: 8,
+          width: 12
         };
         $('.grid-stack').gridstack(options);
       });
