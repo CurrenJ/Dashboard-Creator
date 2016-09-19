@@ -9,6 +9,7 @@
     <script src="depend/jquery.js"></script>
     <script src="depend/fa.js"></script>
     <script src="depend/jqueryui.js"></script>
+    <link rel="stylesheet" href="css/sidenav.css" media="screen" title="no title">
 
     <!--Grid Controlls-->
     <script src="depend/lodash.js" charset="utf-8"></script>
@@ -23,33 +24,26 @@
     </div>
     <!--toolbar-->
 
-    <div class="butts">
-      <div class="dropdown">
-        <button class="fa fa-bars fa-2x dropbtn"></button>
-        <div class="dropdown-content">
-          <a href="#">Background</a>
-          <a href="#">Theme</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="fa fa-paint-brush fa-2x dropbtn"></button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <button class="fa fa-plus fa-2x dropbtn"></button>
-        <div class="dropdown-content">
-          <a href="#">Camera</a>
-          <a href="#">Button</a>
-          <a href="#">Blank</a>
-        </div>
-      </div>
-    </div>
+    <div class="side-panel a">
+  <ul>
+    <li><a><span class="entypo-plus-circled"></span><span class="menu-item">Quick Add</span></a>
+      <ul>
+        <li><a class="entypo-doc-text-inv" onclick="addElement('blank');">Blank</a></li>
+        <li><a class="entypo-layout">Buttons</a></li>
+        <li><a class="entypo-camera" onclick="addElement('camera');">Camera</a></li>
+      </ul>
+    </li>
+    <li><a><span class="entypo-brush"></span><span class="menu-item">Style</span></a>
+      <ul>
+        <li><a class="entypo-bucket">Background</a></li>
+        <li><a class="entypo-palette">Theme</a></li>
+      </ul>
+    </li>
+    <li><a><span class="entypo-paper-plane"></span><span class="menu-item">Feedback</span></a></li>
+    <li><a><span class="entypo-export"></span><span class="menu-item">Export</span></a></li>
+    <li><a><span class="entypo-help"></span><span class="menu-item">Help!</span></a></li>
+  </ul>
+</div>
 
     <!--workspace-->
     <div id="workspace">

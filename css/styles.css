@@ -94,6 +94,7 @@ body {
   border-style: dashed;
   border-color: #778899;
   padding-top: 6px;
+  z-index: 1;
 }
 
 #item {
