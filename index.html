@@ -70,11 +70,11 @@
     <script type="text/javascript">
     $(".dropdown-content").css("min-width", $(".dropbtn").css("width"));
 
-    var cellHeights = $('#workspace').height()/8;
+    var cellHeights = $('#workspace').height()/9 - 10;
       $(function () {
         var options = {
           animate: true,
-          cellHeight: 80,
+          cellHeight: cellHeights,
           verticalMargin: 10,
           float: true,
           height: 8,
